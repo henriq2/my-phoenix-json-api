@@ -59,4 +59,8 @@ defmodule MyAppWeb.UserController do
         |> render("401.json", message: message)
     end
   end
+
+  def sign_up(conn, params) do
+    create(conn, params)
+  end
 end
